@@ -1,0 +1,26 @@
+meta {
+  name: Cadastrar Usuário
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/auth/usuario
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "lucasgardini.dias@hotmail.com",
+    "senha": "medaumreal123",
+    "nomeExibicao": "Kovinski"
+  }
+}
+
+script:post-response {
+  let {data} = res.getBody();
+  bru.setEnvVar("access_token",data);
+  
+  console.log(data);
+}

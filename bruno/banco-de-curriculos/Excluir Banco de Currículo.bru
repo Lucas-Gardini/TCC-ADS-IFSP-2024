@@ -1,0 +1,21 @@
+meta {
+  name: Excluir Banco de Currículo
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/banco-de-curriculos/:id
+  body: none
+  auth: none
+}
+
+params:path {
+  id: 66cd0fa540a79a908adeadda
+}
+
+body:json {
+  {
+    "nome": "nome2"
+  }
+}

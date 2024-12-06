@@ -1,0 +1,1 @@
+// Tipos globais do app ficam aqui (enums, interfaces, etc)

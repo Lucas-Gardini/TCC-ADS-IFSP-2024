@@ -1,0 +1,22 @@
+meta {
+  name: Criar Pasta
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/banco-de-curriculos/:idBancoCurriculo/pasta
+  body: json
+  auth: none
+}
+
+params:path {
+  idBancoCurriculo: 66cd1d25e8e4f0e89a5ada5a
+}
+
+body:json {
+  {
+    "nome": "nome",
+    "cor": "#fff"
+  }
+}

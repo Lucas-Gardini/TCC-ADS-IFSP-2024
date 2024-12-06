@@ -1,0 +1,23 @@
+meta {
+  name: Excluir Currículo
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/banco-de-curriculos/:idBancoCurriculo/pasta/:idPasta/curriculo/:id
+  body: multipartForm
+  auth: none
+}
+
+params:path {
+  idPasta: 66cd2038f4b73e62f65bd911
+  idBancoCurriculo: 66cd1d25e8e4f0e89a5ada5a
+  id: 66cd2038f4b73e62f65bd911
+}
+
+body:json {
+  {
+    "nome": "nome2"
+  }
+}

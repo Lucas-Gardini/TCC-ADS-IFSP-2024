@@ -1,0 +1,19 @@
+meta {
+  name: Cadastrar Configurações
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/openai/configs
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "key": "",
+    "personality": "",
+    "model": ""
+  }
+}

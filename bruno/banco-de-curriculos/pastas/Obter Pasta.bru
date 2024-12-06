@@ -1,0 +1,16 @@
+meta {
+  name: Obter Pasta
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/banco-de-curriculos/:idBancoCurriculo/pasta/:id
+  body: none
+  auth: none
+}
+
+params:path {
+  idBancoCurriculo: 66cd1d25e8e4f0e89a5ada5a
+  id: 66cd2038f4b73e62f65bd911
+}

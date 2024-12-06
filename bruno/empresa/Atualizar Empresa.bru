@@ -1,0 +1,28 @@
+meta {
+  name: Atualizar Empresa
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/empresa/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "cnpj": "34.828.516/0001-40",
+    "razaoSocial": "Empresa Teste",
+    "nomeFantasia": "Empresa Teste LTDA",
+    "telefone": "(11) 99999-9999",
+    "email": "master-enterprise@email.com",
+    "cep": "00000-000",
+    "logradouro": "Rua Teste",
+    "numero": "123",
+    "complemento": "Sala 1",
+    "bairro": "Bairro Teste",
+    "cidade": "Cidade Teste",
+    "estado": "SP"
+  }
+}

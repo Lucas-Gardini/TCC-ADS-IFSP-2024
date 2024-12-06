@@ -1,0 +1,21 @@
+meta {
+  name: Editar Banco de Currículo
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/banco-de-curriculos/:id
+  body: json
+  auth: none
+}
+
+params:path {
+  id: 66cd1b24428217579995adb8
+}
+
+body:json {
+  {
+    "nome": "nome2"
+  }
+}

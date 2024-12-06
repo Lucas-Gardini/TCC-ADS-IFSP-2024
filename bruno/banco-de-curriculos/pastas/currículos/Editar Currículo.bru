@@ -1,0 +1,86 @@
+meta {
+  name: Editar Currículo
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/banco-de-curriculos/:idBancoCurriculo/pasta/:idPasta/curriculo/:id
+  body: json
+  auth: none
+}
+
+params:path {
+  idPasta: 66cd2038f4b73e62f65bd911
+  idBancoCurriculo: 66cd1d25e8e4f0e89a5ada5a
+  id: 66cd2038f4b73e62f65bd911
+}
+
+body:json {
+  {
+    "nome": "João da Silva",
+    "idade": "30",
+    "empregoCargoAtual": "Desenvolvedor Backend",
+    "sobre": "Desenvolvedor com 10 anos de experiência em backend.",
+    "genero": "Masculino",
+    "habilidades": [
+      "JavaScript",
+      "Node.js",
+      "MongoDB"
+    ],
+    "experiencias": [
+      {
+        "tempo": "5 anos",
+        "local": "Empresa A",
+        "descricao": "Desenvolvimento de aplicações backend em Node.js."
+      },
+      {
+        "tempo": "3 anos",
+        "local": "Empresa B",
+        "descricao": "Liderança de equipe e desenvolvimento de APIs."
+      }
+    ],
+    "formacoes": [
+      {
+        "instituicao": "Universidade XYZ",
+        "nome": "Bacharel em Ciência da Computação",
+        "descricao": "Formação em desenvolvimento de software.",
+        "tempo": "4 anos"
+      }
+    ],
+    "cursos": [
+      {
+        "instituicao": "Coursera",
+        "nome": "Curso de Node.js Avançado",
+        "descricao": "Curso avançado sobre desenvolvimento com Node.js.",
+        "tempo": "6 meses"
+      }
+    ],
+    "contato": {
+      "telefones": [
+        "+55 11 91234-5678",
+        "+55 11 98765-4321"
+      ],
+      "cidade": "São Paulo",
+      "email": "joao.silva@example.com",
+      "redes_sociais": [
+        {
+          "nome": "LinkedIn",
+          "url": "https://www.linkedin.com/in/joaosilva"
+        },
+        {
+          "nome": "GitHub",
+          "url": "https://github.com/joaosilva"
+        }
+      ]
+    },
+    "objetivo": "Busco uma posição como Desenvolvedor Sênior para aplicar minhas habilidades em um novo desafio.",
+    "dadosExtras": [
+      {
+        "certificacao": "Certified Node.js Developer",
+        "ano": 2023
+      }
+    ]
+    //"documento": "..."
+  }
+}

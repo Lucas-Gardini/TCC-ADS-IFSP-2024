@@ -1,0 +1,15 @@
+meta {
+  name: Extrair Dados do Currículo
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/banco-de-curriculos/curriculo/extrair
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  curriculo: @file(C:\Users\lucas\Downloads\curriculo-lucas-dias.pdf)
+}

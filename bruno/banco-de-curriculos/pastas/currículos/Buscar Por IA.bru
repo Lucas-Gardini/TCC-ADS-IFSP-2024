@@ -1,0 +1,20 @@
+meta {
+  name: Buscar Por IA
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/banco-de-curriculos/curriculo/buscar-candidato/:bancoCurriculoId/:pastaId?busca=Preciso de um candidato, para atuar na área de gestão de pessoas
+  body: none
+  auth: none
+}
+
+params:query {
+  busca: Preciso de um candidato, para atuar na área de gestão de pessoas
+}
+
+params:path {
+  bancoCurriculoId: 670bfbcdfe573b7130faa255
+  pastaId: 671e857dc36d64ec9740840c
+}

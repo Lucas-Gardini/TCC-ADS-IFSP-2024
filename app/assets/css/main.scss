@@ -1,0 +1,71 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+* {
+	font-family: Inter, sans-serif;
+}
+
+html {
+	font-size: 14px;
+
+	background-color: #d0d0d0 !important;
+	min-height: 100vh;
+}
+
+.oauth-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 10px;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+}
+
+ul {
+	list-style-type: disc;
+
+	padding-left: 2rem;
+
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+h5 {
+	font-size: 0.875rem;
+}
+
+h6 {
+	font-size: 0.75rem;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+.p-datatable-column-sorted {
+	background: none !important;
+	color: black !important;
+}
+
+.p-datatable-sort-icon {
+	color: black !important;
+}

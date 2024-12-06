@@ -1,0 +1,18 @@
+meta {
+  name: Logout
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/auth/logout
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "master@app.com",
+    "senha": "master@147"
+  }
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Chat
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/openai/chat-bot
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "previousMessages": [
+      {
+        "role": "assistant",
+        "content": "..."
+      }
+    ],
+    "newMessage": "Quem é você?"
+  }
+}

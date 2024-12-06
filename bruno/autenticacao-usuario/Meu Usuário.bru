@@ -1,0 +1,18 @@
+meta {
+  name: Meu Usuário
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/auth/usuario
+  body: none
+  auth: none
+}
+
+script:post-response {
+  let {data} = res.getBody();
+  bru.setEnvVar("access_token",data);
+  
+  console.log(data);
+}

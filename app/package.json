@@ -1,0 +1,43 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@brazilian-utils/brazilian-utils": "^1.0.0-rc.12",
+    "@nuxt/fonts": "^0.7.2",
+    "@nuxt/icon": "^1.4.8",
+    "@nuxt/image": "^1.7.0",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
+    "@pinia/nuxt": "^0.5.4",
+    "@primevue/themes": "^4.0.4",
+    "@vee-validate/nuxt": "^4.13.2",
+    "@vee-validate/yup": "^4.13.2",
+    "axios": "^1.7.5",
+    "buffer": "^6.0.3",
+    "luxon": "^3.5.0",
+    "nuxt": "^3.12.4",
+    "primevue": "^4.0.4",
+    "semantic-response": "^1.0.3",
+    "showdown": "^2.1.0",
+    "vue": "latest",
+    "vue3-emoji-picker": "^1.1.8",
+    "vue3-lottie": "^3.3.0",
+    "yup": "^1.4.0"
+  },
+  "packageManager": "yarn@4.4.0",
+  "devDependencies": {
+    "@primevue/nuxt-module": "^4.0.4",
+    "@types/luxon": "^3",
+    "@types/showdown": "^2",
+    "daisyui": "^4.12.10",
+    "sass": "^1.77.8"
+  }
+}
