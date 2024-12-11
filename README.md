@@ -70,9 +70,9 @@ Este projeto está licenciado sob a **Licença MIT**. Consulte o arquivo `LICENS
 
 ---
 
-## **Autores**
+## **Autor**
 
--   **Felipe Vieira Lilli**
+<!---   **Felipe Vieira Lilli**-->
 -   **Lucas Gardini Dias**
 
 ---
